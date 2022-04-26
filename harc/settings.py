@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'houston-area-rug-cleaning.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'houston-area-rug-cleaning.herokuapp.com', 'www.houstonarearugcleaning.com', 'hosutonarearugcleaning.com']
 
 
 # Application definition
