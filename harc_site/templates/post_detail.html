@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block meta %}
+<meta name="description" content="{{ post.meta_description }}" />
+<title>Houston Area Rug Cleaning - {{ object.title }}</title>
+{% endblock meta %} {% block content %}
+<div class="space"><br /><br /><br /></div>
+
+<div class="content-wrap">
+  <div class="blog-post">
+    <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+    <p class="text-black-50 h6">{{ post.author }} | {{ post.created_on }}</p>
+    <p class="blog-content">{{ object.content | safe }}</p>
+    {% if post.image %}
+    <div class="blog-img">
+      <img src="{{ post.smart.url }}" alt="{{ post.image_alt }}" />
+    </div>
+    {% endif %}
+    <br />
+  </div>
+</div>
+
+{% endblock content %}

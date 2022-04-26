@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block meta %}
+<meta name="description" content="" />
+<title>Houston Area Rug Cleaning - Blog</title>
+{% endblock meta %} {% block content %}
+<div class="space"><br /><br /><br /></div>
+
+<div class="content-wrap">
+  <h1>Houston Area Rug Cleaning Blog</h1>
+  <div class="breaker"></div>
+  <div class="posts">
+    {% for post in post_list %}
+    <div class="blog-post-list">
+      <a href="{% url 'post_detail' post.slug  %}">
+        <h2 class="blog-titles">{{ post.title }}</h2>
+      </a>
+      <p class="blog-preview text-black-50 h6">
+        {{ post.author }} | {{ post.created_on}}
+      </p>
+      <p class="card-text">{{post.content|slice:":250"|striptags }}...</p>
+      <!--<a href="{% url 'post_detail' post.slug  %}" class="read-more"
+        >Read More &rarr;</a
+      >-->
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
