@@ -10,9 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+#from nturl2path import url2pathname
 from pathlib import Path
 import os
 from decouple import config
+
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -94,13 +97,16 @@ WSGI_APPLICATION = 'harc.wsgi.application'
 #    }
 #}
 
+
+
+
 DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'harcdb',
         'USER': 'Harc_Deckers',
         'PASSWORD': 'Luckycharms13!',
-        'HOST': 'localhost',
+        'HOST': 'localhost, ec2-3-223-213-207.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
