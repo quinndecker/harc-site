@@ -25,7 +25,10 @@
 
   <body>
     <div class="wrapper">
-      <header><!--<a href="/blog/">Blog</a>--></header>
+      <header>
+        <a href="{% url 'blog' %}">Blog</a
+        ><a href="{% url 'homepage' %}">Home</a>
+      </header>
       {% block content %}{% endblock %}
       <footer></footer>
     </div>
