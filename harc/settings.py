@@ -96,9 +96,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-import dj_database_url 
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+import dj_database_url
+
+DATABASES['default'] = dj_database_url.parse('postgres://nbezhzhxcjtxff:b3fe53e5755617c88f0408245a34d3b4057c5fee7e87e6883a6d11ecbce5467c@ec2-34-194-73-236.compute-1.amazonaws.com:5432/damu36fnghq273')
 
 
 #DATABASES = {
