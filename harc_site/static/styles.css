@@ -1,0 +1,238 @@
+/*colors and fonts*/
+:root {
+  --light-blue: #628ec9;
+  --dark-blue: #002962;
+  --light-orange: #f48818;
+  --dark-orange: #ec6e19;
+  --bright-white: #ffffff;
+  --dark-white: #e8eaeb;
+  --font-1-font-family: "Lobster", cursive;
+  --font-2-font-family: "Montserrat";
+}
+
+body {
+  margin: auto;
+  background-color: var(--dark-white);
+}
+
+.topbar {
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+}
+
+header {
+  background-color: var(--dark-blue);
+  padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+  display: inline-flex;
+  width: 100%;
+}
+
+.logo a {
+  font-family: var(--font-1-font-family);
+  color: var(--dark-orange);
+  font-size: 3rem;
+  text-decoration: none;
+}
+.logo a:hover {
+  text-decoration: none;
+  color: var(--light-orange);
+}
+
+.cta-phone {
+  font-family: var(--font-1-font-family);
+  color: var(--bright-white);
+  padding: 1rem 1rem 0 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.cta-phone:hover {
+  text-decoration: underline;
+  color: var(--bright-white);
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.1);
+}
+
+.btn-top {
+  background-color: var(--dark-orange);
+  border-radius: 5px;
+  border: var(--dark-white);
+  height: 2rem;
+  font-family: var(--font-2-font-family);
+  color: var(--bright-white);
+  padding: 0.1rem 0.75rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  right: 4rem;
+  position: absolute;
+}
+
+.btn-small {
+  background-color: var(--dark-orange);
+  border-radius: 5px;
+  border: var(--dark-white);
+  height: 2rem;
+  font-family: var(--font-2-font-family);
+  color: var(--bright-white);
+  padding: 0.1rem 0.75rem;
+  font-weight: bolder;
+}
+
+.btn-top:hover {
+  text-decoration: underline;
+  background-color: var(--light-orange);
+}
+
+.btn-small:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: var(--dark-orange);
+}
+
+.nav-list {
+  display: inline-flex;
+  padding: 1rem 0.5rem 0.5rem 1.5rem;
+}
+
+.nav-list li {
+  list-style: none;
+  margin-right: 5rem;
+}
+
+.nav-list a {
+  color: var(--bright-white);
+  font-family: var(--font-2-font-family);
+}
+
+footer {
+  background-color: var(--dark-orange);
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.footer-columns {
+  max-width: 100%;
+  display: flex;
+}
+
+.foot-col {
+  max-width: 25%;
+}
+
+.foot-col-special {
+  max-width: 15%;
+}
+
+.foot-header {
+  color: var(--bright-white);
+  font-family: var(--font-2-font-family);
+  font-size: 1rem;
+}
+
+.foot-list {
+  padding-inline-start: 0px;
+}
+
+.foot-list li {
+  list-style: none;
+}
+
+.foot-list a {
+  color: var(--bright-white);
+  font-family: var(--font-2-font-family);
+  font-size: 0.75rem;
+}
+
+.foot-col p {
+  color: var(--bright-white);
+  font-family: var(--font-2-font-family);
+}
+
+#special-foot-list li {
+  display: inline-flex;
+}
+#special-foot-list a {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+#special-foot-list img {
+  height: 3rem;
+}
+.pin {
+  margin-top: 1rem;
+}
+
+.upper-fold {
+  /*need to change this picture*/
+  background-image: url("/static/img/area-rug-banner.png");
+  max-width: 100%;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.upper-fold h1 {
+  font-family: var(--font-1-font-family);
+  font-size: 5rem;
+  color: var(--dark-orange);
+  text-shadow: 0 0 7px black, 0 0 10px black;
+  padding-top: 2rem;
+}
+
+.upper-fold h1 span {
+  font-size: 3rem;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.upper-fold-subhead {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.upper-fold-subhead p {
+  color: var(--bright-white);
+  font-family: var(--font-2-font-family);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-shadow: 0 0 7px black, 0 0 10px black;
+}
+
+.home-schedulebtn {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.btn-lg {
+  display: inline-block;
+  background-color: var(--dark-orange);
+  color: var(--dark-white);
+  border: 2.5px solid black;
+  text-shadow: 0 0 3.5px black, 0 0 5px black;
+  font-family: var(--font-1-font-family);
+  font-weight: lighter;
+}
+
+.btn-lg:hover {
+  background-color: var(--light-orange);
+  color: var(--bright-white);
+  text-decoration: underline;
+}
+
+.whiteblock {
+  background-color: var(--dark-white);
+  max-width: 85%;
+  margin: 0 auto;
+}

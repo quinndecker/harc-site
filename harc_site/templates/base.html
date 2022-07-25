@@ -10,7 +10,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <!--<link rel="stylesheet" href="{% static 'styles.css' %}">-->
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -24,14 +24,120 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="topbar">
       <header>
-        <a href="{% url 'blog' %}">Blog</a
-        ><a href="{% url 'homepage' %}">Home</a>
-        <p>hello hello</p>
+        <div class="logo">
+          <h1><a href="/">Houston Area Rug Cleaning </a></h1>
+        </div>
+        <a class="cta-phone" href=""
+          ><p>Call or Text:<span>(000)-000-0000</span></p>
+        </a>
+        <!--Put Fittlebug here-->
+        <button class="button btn-top" href="">Book Now</button>
+        <!--End Fittlebug-->
       </header>
-      {% block content %}{% endblock %}
-      <footer></footer>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Service Area</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
+    {% block content %}{% endblock %}
+    <footer>
+      <div class="footer-columns">
+        <div class="col foot-col-special">
+          <h4 class="foot-header">Areas We Serve:</h4>
+          <ul class="foot-list">
+            <li><a href="">Houston</a></li>
+            <li><a href="">Kingwood</a></li>
+            <li><a href="">Atascocita</a></li>
+            <li><a href="">Huffman</a></li>
+            <li><a href="">The Woodlands</a></li>
+            <li><a href="">Spring</a></li>
+            <li><a href="">Humble</a></li>
+            <li><a href="">Porter</a></li>
+            <li><a href="">New Caney</a></li>
+            <li><a href="">Roman Forest</a></li>
+            <li><a href="">Conroe</a></li>
+            <li><a href="">Crosby</a></li>
+            <li><a href="">Dayton</a></li>
+            <li><a href="">Liberty</a></li>
+            <li><a href="">Splendora</a></li>
+            <li><a href="">Cypress</a></li>
+            <li><a href="">Tomball</a></li>
+            <li><a href="">Magnolia</a></li>
+            <li><a href="">Bellaire</a></li>
+            <li><a href="">Katy</a></li>
+            <li><a href="">Sumerwood</a></li>
+          </ul>
+        </div>
+        <div class="col foot-col">
+          <h4 class="foot-header">Most Popular Services:</h4>
+          <ul class="foot-list">
+            <li><a href="">Area Rug Cleaning</a></li>
+            <li><a href="">Area Rug Pet Stain and Odor Remediation</a></li>
+            <li><a href="">Area Rug Protector</a></li>
+            <li><a href="">Area Rug Advanced Stain Treatment</a></li>
+            <li><a href="">Area Rug Repair</a></li>
+          </ul>
+        </div>
+        <div class="col foot-col">
+          <h4 class="foot-header">The Dirt on Houston Area Rug Cleaning:</h4>
+          <ul class="foot-list">
+            <!--<li><a href="">Reviews</a></li>-->
+            <li><a href="">Our Guarantee</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">About Houston Area Rug Cleaning</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col foot-col">
+          <h4 class="foot-header">Contact Us:</h4>
+          <ul id="special-foot-list" class="foot-list">
+            <!--<li><a href="">Reviews</a></li>-->
+            <li>
+              <img
+                class="pin"
+                src="{% static 'img/location.png' %}"
+                alt="location pin"
+              />
+              <p>
+                Houston Area Rug Cleaning <br />
+                1701 Northpark Dr Ste 13 <br />
+                Kingwood, TX 77339 <br />
+              </p>
+            </li>
+            <li>
+              <img src="{% static 'img/phone.png' %}" alt="phone" />
+              <a href="">
+                <p>(000)-000-0000</p>
+              </a>
+            </li>
+            <li>
+              <img src="{% static 'img/mail.png' %}" alt="mail" />
+              <a href="">
+                <p>example@example.com</p>
+              </a>
+            </li>
+          </ul>
+          <h4 class="foot-header">Office Hours:</h4>
+          <p>
+            <time itemprop="openingHours" datetime="Mo-Fri 08:00-17:00"
+              >Mon - Fri 8:00 am to 5:00 pm</time
+            >
+          </p>
+          <h4 class="foot-header">Hours of Operation:</h4>
+          <p>
+            <time itemprop="openingHours" datetime="Mo-Fri 08:00-20:00"
+              >Mon - Sat 8:00 am to 8:00 pm</time
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

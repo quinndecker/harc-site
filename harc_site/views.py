@@ -1,10 +1,11 @@
-from django.shortcuts import HttpResponse, render, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 
 
 def index(request):
     return render(request, 'home.html')
-def booknow(request):
-    return render(request, 'book-now.html')
+def booking(request):
+    return render(request, 'booking-templates/book-now.html')
+
 
 
 ## Blog Stuff ##

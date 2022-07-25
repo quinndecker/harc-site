@@ -9,7 +9,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='homepage'),
-    path('book-now/', views.booknow, name='booknow'),
+    path('booking/', views.booking, name='booking'),
+
 
      ## THIS HAS TO BE LAST##
     #-Blog Functionality-#

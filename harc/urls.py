@@ -28,8 +28,6 @@ sitemaps = {
     'static': StaticViewSitemap,
 }
 
-
-
 urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
     path('', include('harc_site.urls')),
