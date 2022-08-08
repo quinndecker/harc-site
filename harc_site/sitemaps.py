@@ -8,6 +8,6 @@ class PostSitemap(Sitemap):
 
 class StaticViewSitemap(Sitemap):
     def items(self):
-        return ['homepage', 'booknow']
+        return ['homepage', 'service-area', 'contact-us', 'contact-success']
     def location(self, item):
         return reverse(item)
