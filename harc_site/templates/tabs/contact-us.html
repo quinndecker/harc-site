@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block meta %}
+<meta name="description" content="" />
+<title>Contact | Houston Area Rug Cleaning</title>
+{% endblock meta %} {% load crispy_forms_tags %}{% block content %}
+
+<div class="wrapper">
+  <div class="blueblock">
+    <h1 class="content-headers">Contact Us</h1>
+  </div>
+  <div class="form-wrap">{% crispy form %}</div>
+</div>
+{% endblock content %}

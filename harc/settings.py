@@ -13,7 +13,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 #from nturl2path import url2pathname
 from pathlib import Path
 import os
+from tkinter import E
 from decouple import config
+import environ
+
 
 
 
@@ -50,6 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'imagekit',
+    'phonenumber_field',
+    'crispy_forms'
 ]
 
 SITE_ID = 1
@@ -162,3 +167,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+env=environ.Env()
+environ.Env.read_env()
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
+
+#Crispy Forms#
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+

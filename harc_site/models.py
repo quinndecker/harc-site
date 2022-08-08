@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 from django.urls import reverse
 from operator import truediv
 from django.db import models
@@ -7,6 +8,8 @@ from ckeditor.fields import RichTextField
 from imagekit.models import ImageSpecField
 from imagekit.processors import SmartResize
 
+
+    
 STATUS = (
     (0,"Draft"),
     (1,"Publish")

@@ -6,6 +6,7 @@
   --dark-orange: #ec6e19;
   --bright-white: #ffffff;
   --dark-white: #e8eaeb;
+  --black-text: black;
   --font-1-font-family: "Lobster", cursive;
   --font-2-font-family: "Montserrat";
 }
@@ -13,6 +14,11 @@
 body {
   margin: auto;
   background-color: var(--dark-white);
+}
+
+.col {
+  margin: 0;
+  flex-basis: auto;
 }
 
 .topbar {
@@ -62,33 +68,20 @@ button:focus {
   border-radius: 5px;
   border: var(--dark-white);
   height: 2rem;
-  font-family: var(--font-2-font-family);
-  color: var(--bright-white);
   padding: 0.1rem 0.75rem;
   font-weight: bolder;
   margin-top: 1rem;
   right: 4rem;
   position: absolute;
 }
-
-.btn-small {
-  background-color: var(--dark-orange);
-  border-radius: 5px;
-  border: var(--dark-white);
-  height: 2rem;
+.btn-top a {
   font-family: var(--font-2-font-family);
   color: var(--bright-white);
-  padding: 0.1rem 0.75rem;
-  font-weight: bolder;
 }
 
 .btn-top:hover {
   text-decoration: underline;
   background-color: var(--light-orange);
-}
-
-.btn-small:hover {
-  text-decoration: underline;
 }
 
 nav {
@@ -119,6 +112,7 @@ footer {
 .footer-columns {
   max-width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .foot-col {
@@ -210,6 +204,15 @@ footer {
   text-shadow: 0 0 7px black, 0 0 10px black;
 }
 
+.upper-fold-subhead a {
+  color: var(--bright-white);
+  font-family: var(--font-2-font-family);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-shadow: 0 0 7px black, 0 0 10px black;
+  text-decoration: underline;
+}
+
 .home-schedulebtn {
   padding-top: 2rem;
   padding-bottom: 10rem;
@@ -218,10 +221,8 @@ footer {
 .btn-lg {
   display: inline-block;
   background-color: var(--dark-orange);
-  color: var(--dark-white);
   border: 2.5px solid black;
   text-shadow: 0 0 3.5px black, 0 0 5px black;
-  font-family: var(--font-1-font-family);
   font-weight: lighter;
 }
 
@@ -231,8 +232,172 @@ footer {
   text-decoration: underline;
 }
 
+.btn-lg a {
+  font-family: var(--font-1-font-family);
+  color: var(--dark-white);
+}
+
 .whiteblock {
-  background-color: var(--dark-white);
   max-width: 85%;
   margin: 0 auto;
+  text-align: center;
+}
+.blueblock {
+  background-color: var(--dark-blue);
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.special-subhead {
+  font-family: var(--font-1-font-family);
+  font-size: 2.5rem;
+  color: var(--dark-orange);
+  text-shadow: 0 0 7px black, 0 0 10px black;
+  padding-top: 2rem;
+}
+.content-subhead {
+  font-family: var(--font-2-font-family);
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.col-text {
+  max-width: 85%;
+  margin: 0 auto;
+  color: var(--dark-white);
+  font-size: large;
+  font-weight: bold;
+  font-family: var(--font-2-font-family);
+  padding-bottom: 2rem;
+}
+
+.content-headers {
+  font-family: var(--font-1-font-family);
+  color: var(--dark-orange);
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.chunk {
+  max-width: 85%;
+  margin: 0 auto;
+}
+h3 {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.body-columns {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.body-columns-2 {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-title {
+  max-width: 25%;
+}
+.col-text-2 {
+  max-width: 70%;
+  border-left: 2px dotted black;
+}
+
+.blacktext {
+  font-family: var(--font-2-font-family);
+  color: black;
+}
+
+.blackbreaker {
+  max-width: 90%;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.centerme {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.anchor {
+  display: block;
+  position: relative;
+  top: -10rem;
+  visibility: hidden;
+}
+
+.form-wrap {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+#id_contact-form {
+  padding-left: 8rem;
+}
+.firstname {
+  display: inline-flex;
+}
+.lastname {
+  display: inline-flex;
+}
+.emailaddress-form {
+  display: inline-flex;
+}
+.phonenumber-form {
+  display: inline-flex;
+}
+.address-form {
+  display: inline-flex;
+}
+.city-form {
+  display: inline-flex;
+}
+.state-form {
+  display: inline-flex;
+}
+.zipcode-form {
+  display: inline-flex;
+}
+.message-widget-form {
+  max-width: 50.5rem;
+  max-height: 10rem;
+}
+.area-lists {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.area-lists ul {
+  list-style: none;
+}
+.col-6 {
+  padding-top: 1rem;
+  width: 33.333333%;
+}
+.col-6 li {
+  font-family: var(--font-2-font-family);
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+.col-6 a {
+  color: black;
+}
+.blacklinks {
+  color: black;
+  text-decoration: underline;
+}
+.mapblock {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }

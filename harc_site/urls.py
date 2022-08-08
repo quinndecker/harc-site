@@ -9,8 +9,16 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='homepage'),
-    path('booking/', views.booking, name='booking'),
+    #path('about-us/', views.aboutus, name='about-us'),
+    path('service-area/', views.servicearea, name='service-area'),
+    path('contact-us/', views.contactus, name='contact-us'),
+    path('contact-us/contact-success/', views.contactsuccess, name='contact-success'),
 
+    
+
+
+    #-When Booking App is completed#
+    #path('booking/', views.booking, name='booking'),
 
      ## THIS HAS TO BE LAST##
     #-Blog Functionality-#
