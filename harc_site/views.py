@@ -1,4 +1,3 @@
-from distutils.log import error
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
