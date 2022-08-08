@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 #from nturl2path import url2pathname
 from pathlib import Path
 import os
-from tkinter import E
 from decouple import config
 import environ
 
