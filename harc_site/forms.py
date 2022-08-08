@@ -78,7 +78,7 @@ class ContactForm(forms.Form):
         max_length=20,
     )
     address1 = forms.CharField(
-        widget=forms.TextInput(attrs={'style':'width: 25rem'}),
+        widget=forms.TextInput(attrs={'class': 'address-box'}),
         max_length=225, 
     )
     city = forms.CharField(

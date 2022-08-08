@@ -22,6 +22,53 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Houston Area Rug Cleaning",
+        "image": "",
+        "@id": "",
+        "url": "https://www.houstonarearugcleaning.com/",
+        "telephone": "281-973-0280",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1701 Northpark Dr Ste 13",
+          "addressLocality": "Kingwood",
+          "postalCode": "77339",
+          "addressCountry": "US",
+          "addressRegion": "TX"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ]
+      }
+  </script>
+  <!--End Schema-->
   </head>
 
   <body>
@@ -37,15 +84,19 @@
         <button class="button btn-top"><a href="{% url 'contact-us' %}">Book Now</a></button>
         <!--End Fittlebug-->
       </header>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/#services">Services</a></li>
-          <!--<li><a href="">About Us</a></li>-->
-          <li><a href="{% url 'service-area' %}">Service Area</a></li>
-          <li><a href="{% url 'contact-us' %}">Contact Us</a></li> 
-        </ul>
-      </nav>
+      <div class="bottomhead">
+        <label for="toggle" class="nav-toggle"><span></span></label>
+        <input type="checkbox" id="toggle">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#services">Services</a></li>
+            <!--<li><a href="">About Us</a></li>-->
+            <li><a href="{% url 'service-area' %}">Service Area</a></li>
+            <li><a href="{% url 'contact-us' %}">Contact Us</a></li> 
+          </ul>
+        </nav>
+      </div>
     </div>
     {% block content %}{% endblock %}
     <footer>
