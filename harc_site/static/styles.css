@@ -307,12 +307,12 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-.col-title {
-  max-width: 25%;
-}
 .col-text-2 {
   max-width: 70%;
   border-left: 2px dotted black;
+}
+.col-title {
+  max-width: 25%;
 }
 
 .blacktext {
@@ -409,6 +409,9 @@ h3 {
 .mapblock {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+.map {
+  max-width: 100%;
 }
 
 label {
@@ -553,6 +556,9 @@ label {
   .foot-col-special {
     max-width: 100%;
   }
+  .area-list {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 467px) {
@@ -561,5 +567,14 @@ label {
   .input-group > .form-control,
   .input-group > .form-control-plaintext {
     width: 17rem;
+  }
+  .col-title {
+    max-width: 90%;
+  }
+  .area-list li {
+    text-align: left;
+  }
+  .col-6 li {
+    font-size: 0.75rem;
   }
 }
